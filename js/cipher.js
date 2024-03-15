@@ -11,6 +11,8 @@ function handleEncrypt() {
         } else if ("a" <= ch && ch <= "z") {
             charCode = (ch.charCodeAt() - "a".charCodeAt() + offset) % 26 +
                 "a".charCodeAt();
+        } else if (ch == " ") {
+            charCode = ch.charCodeAt();
         } else {
             alert("出现非法字符！（只允许出现a-z，A-Z中的字符）");
             form.ciphertext.value = "";
