@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="stylesheet" href="../css/cipher.css">
+    <script src="../js/cipher.js"></script>
+    <title>zzy2011的主页-加密</title>
+  </head>
+  <body>
+    <header id="page-header">
+      <h1 id="header-title">加密</h1>
+    </header>
+    <nav id="page-nav">
+      <a class="nav-link" href="../index.html">主页</a>
+      <a class="nav-link" href="indroduction.html">简介</a>
+      <a class="nav-link" href="cipher.html">加密</a>
+    </nav>
+    <article>
+      <section>
+        <h1 class="article-title">凯撒加密</h1>
+        <form action="" method="get" class="encryption-parameters-form" name="encryption-parameters-form">
+          <div class="encryption-parameters-div">
+            <label for="encryption-parameters-plaintext">请输入明文：</label>
+            <input
+              type="text"
+              size="50"
+              name="plaintext"
+              placeholder="请输入明文（a-z，A-Z）"
+              id="encryption-parameters-plaintext">
+            <label for="encryption-parameters-offset">请输入密钥：</label>
+            <input
+              type="number"
+              min="-2147483648"
+              max="2147483647"
+              name="offset"
+              placeholder="请输入密钥"
+              id="encryption-parameters-offset">
+          </div>
+          <div class="encryption-parameters-div">
+            <label for="encryption-ciphertext">加密后的暗文：</label>
+            <textarea
+              cols="50"
+              name="ciphertext"
+              id="encryption-ciphertext"
+              placeholder="加密后的暗文"
+              readonly></textarea>
+          </div>
+          <input type="button" value="加密" onclick="handleEncrypt();">
+        </form>
+      </section>
+    </article>
+  </body>
+</html>

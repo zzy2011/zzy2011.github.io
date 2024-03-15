@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'HanYiWenHei';
+    src: url('../font/genshin-impact.ttf');
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+header#page-header {
+    width: 100vw;
+    min-height: 15vh;
+    opacity: 0.75;
+    background-color: #dfdfdf;
+    display: flex;
+}
+
+h1#header-title {
+    font-family: 'HanYiWenHei', 'Consolas';
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+nav#page-nav {
+    padding: 1% 1%;
+    width: 100vw;
+    background-color:beige;
+}
+
+a {
+    color: skyblue;
+    text-decoration: none;
+}
+
+a.nav-link {
+    color: blue;
+    text-decoration: none;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0.5% 0.75%;
+    margin-right: 1%;
+    background-color: #dfdfdf;
+}
+
+article {
+    padding: 0px 3vw;
+    font-size: larger;
+}
+
+section {
+    padding: 5%;
+    margin: 5%;
+    border: solid;
+    border-width: 5vh 3vw;
+    border-radius: 2vw;
+    border-color: aliceblue;
+    background-color: azure;
+}
+
+h1.article-title {
+    font-family: 'HanYiWenHei', 'Consolas';
+    font-size: xx-large;
+    text-align: center;
+}
