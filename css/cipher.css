@@ -1,5 +1,11 @@
-form.encryption-parameters-form { display: table; }
-div.encryption-parameters-div { display: table-row; }
+form.encryption-parameters-form, form.decryption-parameters-form {
+    display: table;
+}
+
+div.encryption-parameters-div, div.decryption-parameters-div {
+    display: table-row;
+}
+
 label, input {
     display: table-cell;
     margin-right: 10%;

@@ -20,6 +20,7 @@
     <article>
       <section>
         <h1 class="article-title">凯撒加密</h1>
+        <!--加密-->
         <form action="" method="get" class="encryption-parameters-form" name="encryption-parameters-form">
           <div class="encryption-parameters-div">
             <label for="encryption-parameters-plaintext">请输入明文：</label>
@@ -48,6 +49,36 @@
               readonly></textarea>
           </div>
           <input type="button" value="加密" onclick="handleEncrypt();">
+        </form>
+        <!--解密-->
+        <form action="" method="get" class="decryption-parameters-form" name="decryption-parameters-form">
+          <div class="decryption-parameters-div">
+            <label for="decryption-parameters-ciphertext">请输入暗文：</label>
+            <input
+              type="text"
+              size="50"
+              name="ciphertext"
+              placeholder="请输入暗文（仅解密a-z，A-Z，其余字符保留）"
+              id="decryption-parameters-ciphertext">
+            <label for="decryption-parameters-offset">请输入密钥：</label>
+            <input
+              type="number"
+              min="-2147483648"
+              max="2147483647"
+              name="offset"
+              placeholder="请输入密钥"
+              id="decryption-parameters-offset">
+          </div>
+          <div class="decryption-parameters-div">
+            <label for="decryption-plaintext">解密后的明文：</label>
+            <textarea
+              cols="50"
+              name="plaintext"
+              id="decryption-plaintext"
+              placeholder="解密后的明文"
+              readonly></textarea>
+          </div>
+          <input type="button" value="解密" onclick="handleDecrypt();">
         </form>
       </section>
     </article>
